@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Conthrax";
+  src: url("https://wedointerior.ae/fonts/Conthrax.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Penrise";
+  src: url("https://wedointerior.ae/fonts/Penrise.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url("https://wedointerior.ae/fonts/Play-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-play: "Play", Arial, sans-serif;
+  --font-conthrax: "Conthrax", Arial, sans-serif;
+  --font-penrise: "Penrise", cursive;
+  --color-ink: #121212;
+  --color-cream: #f6ede5;
+  --color-rose: #caa193;
+  --color-rose-deep: #a0624d;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background: #121212;
+    color: #f6ede5;
+    font-family: "Play", Arial, sans-serif;
+  }
+
+  ::selection {
+    background: #caa193;
+    color: #111;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+    border-radius: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@keyframes heroFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@layer components {
+  .site-logo-wrap {
+    border-radius: 999px;
+    background: #f6ede5;
+    box-shadow: 0 0 0 1px rgba(246, 237, 229, 0.95), 0 4px 18px rgba(246, 237, 229, 0.2);
+    overflow: hidden;
+  }
+
+  .site-logo-img {
+    display: block;
+  }
+
+  .site-blueprint {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .site-blueprint-layer {
+    position: absolute;
+    inset: -8%;
+    background-color: transparent;
+    background-image: url("/construction-bg.svg");
+    background-repeat: repeat;
+    background-size: 980px 700px;
+    background-position: center top;
+    opacity: 0.32;
+    filter: saturate(1.05);
+  }
+
+  .site-blueprint-glow {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 18% 12%, rgba(202, 161, 147, 0.12), transparent 42%),
+      radial-gradient(ellipse at 88% 78%, rgba(160, 98, 77, 0.1), transparent 46%);
+  }
+
+  .site-blueprint-local {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background-image: url("/construction-bg.svg");
+    background-repeat: repeat;
+    background-size: 920px 660px;
+    opacity: 0.16;
+  }
+
+  .anim-split {
+    perspective: 600px;
+  }
+
+  .anim-split .anim-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .anim-split.in-view .anim-word {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .anim-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .anim-reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
