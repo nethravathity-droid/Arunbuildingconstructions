@@ -5,10 +5,10 @@ import CtaBand from "../components/CtaBand";
 import BuildJourneyExperience from "../components/BuildJourneyExperience";
 
 const heroSlides = [
-  { image: "/hero1.png", caption: "BUILDING LEGACIES IN BENGALURU" },
-  { image: "/hero2.png", caption: "FROM FIRST SKETCH TO FINAL HANDOVER" },
-  { image: "/hero3.png", caption: "RESIDENTIAL AND COMMERCIAL CONSTRUCTION" },
-  { image: "/hero4.png", caption: "SPACES BUILT WITH PURPOSE" },
+  { image: "/hero4.png", caption: "BUILDING LEGACIES IN BENGALURU" },
+  { image: "/hero3.png", caption: "FROM FIRST SKETCH TO FINAL HANDOVER" },
+  { image: "/hero2.png", caption: "RESIDENTIAL AND COMMERCIAL CONSTRUCTION" },
+  { image: "/hero1.png", caption: "SPACES BUILT WITH PURPOSE" },
 ];
 
 const reasons = [
