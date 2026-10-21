@@ -98,7 +98,7 @@ function Process() {
           </p>
 
           <Link
-            to="/contact"
+            to="/coantact"
             className="mt-7 inline-block border border-[#caa193]/70 px-8 py-3 font-conthrax text-[9px] uppercase tracking-wide text-[#caa193] transition-colors duration-300 hover:bg-[#caa193] hover:text-black sm:px-10 sm:text-[10px]"
           >
             START YOUR PROJECT

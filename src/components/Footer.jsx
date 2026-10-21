@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const PHONE = "+91 99454 54529";
-const EMAIL = "arunbuildingconstructions@gmail.com";
+const EMAIL = "arunbuildingconstructions.1@gmail.com";
 const links = [
   ["Home", "/"],
   ["Services", "/services"],

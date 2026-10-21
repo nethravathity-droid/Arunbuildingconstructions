@@ -56,10 +56,10 @@ const processSteps = [
 ];
 
 const areas = [
-  ["WHITEFIELD", "Homes and commercial spaces across East Bengaluru."],
-  ["INDIRANAGAR", "Residential and boutique commercial construction."],
-  ["ELECTRONIC CITY", "Workspaces and residential projects in the south corridor."],
-  ["KORAMANGALA", "Refined residential upgrades and new builds."],
+  ["ALL OVER BANGALORE", "Homes and commercial spaces across East Bengaluru."],
+  ["BANGALORE RURAL", "Residential and boutique commercial construction."],
+  ["NEAR BY BANGALORE DIST", "Workspaces and residential projects in the south corridor."],
+  ["KANAKAPURA", "Refined residential upgrades and new builds."],
 ];
 
 const faqs = [
