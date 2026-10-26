@@ -56,7 +56,7 @@ const processSteps = [
 ];
 
 const areas = [
-  ["DEVANAHALLI & YELANKA", "Homes and commercial spaces across East Bengaluru."],
+  ["DEVANAHALLI & YELANKHA", "Homes and commercial spaces across East Bengaluru."],
   ["HOSKOTE & KR PURAM", "Residential and boutique commercial construction."],
   ["CHIKKABALLAPURA", "Workspaces and residential projects in the south corridor."],
   ["ALL OVER BANGALORE", "Refined residential upgrades and new builds."],
@@ -246,7 +246,7 @@ function Home() {
         <SectionOrnament className="mb-6" />
         <h2 className="text-center font-conthrax text-[12px] tracking-widest sm:text-xl">Areas We Serve</h2>
         <p className="mx-auto mt-4 max-w-4xl text-center font-play text-[12px] text-gray-300 sm:text-base">
-          Our base in Bengaluru keeps Whitefield, Indiranagar, Electronic City, Koramangala and neighbouring communities within easy reach.
+          Our Construction work all over Bengaluru
         </p>
         <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {areas.map(([title, text]) => (
