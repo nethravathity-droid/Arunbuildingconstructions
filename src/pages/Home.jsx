@@ -56,9 +56,9 @@ const processSteps = [
 ];
 
 const areas = [
-  ["DEVANAHALLI & YELANKHA", "Homes and commercial spaces across East Bengaluru."],
+  ["DEVANAHALLI & YELANKHA", "Homes and commercial spaces across North Bengaluru."],
   ["HOSKOTE & KR PURAM", "Residential and boutique commercial construction."],
-  ["CHIKKABALLAPURA", "Workspaces and residential projects in the south corridor."],
+  ["CHIKKABALLAPURA", "Workspaces and residential projects in the North corridor."],
   ["ALL OVER BANGALORE", "Refined residential upgrades and new builds."],
 ];
 

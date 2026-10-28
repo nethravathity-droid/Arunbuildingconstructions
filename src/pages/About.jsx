@@ -119,7 +119,7 @@ function LeaderPortrait({ name, image, role }) {
           <span className="font-conthrax text-[10px] tracking-[0.22em] text-[#caa193]">
             LEADERSHIP
           </span>
-          <span className="font-penrise text-2xl text-white/80">
+          <span className="font-penrise text-2xl text-white/40">
             {name}
           </span>
           <span className="font-play text-xs text-white/40">
@@ -134,7 +134,7 @@ function LeaderPortrait({ name, image, role }) {
         <span className="font-conthrax text-[9px] uppercase tracking-[0.22em] text-[#dfb8a8]">
           {role}
         </span>
-        <h3 className="mt-2 font-penrise text-2xl tracking-wide text-white sm:text-3xl">
+        <h3 className="mt-2 font-penrise text-xl tracking-wide text-white sm:text-1xl">
           {name}
         </h3>
       </div>
@@ -149,77 +149,10 @@ function About() {
   return (
     <>
       {/* HERO */}
-      <PageHero title="ARUN BUILDING CONSTRUCTIONS" />
+
 
       {/* COMPANY INTRODUCTION */}
-      <section className="relative overflow-hidden bg-transparent px-5 py-13 text-white sm:px-8 sm:py-15 lg:px-20 lg:py-24">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -left-24 top-10 h-64 w-64 rounded-full bg-[#caa193]/[0.04] blur-3xl"
-        />
 
-        <div className="relative z-[1] mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-          <div>
-            <SectionOrnament className="mb-6" />
-
-            <p className="font-conthrax text-[10px] tracking-[0.25em] text-[#caa193]">
-              WHO WE ARE
-            </p>
-
-            <h2 className="mt-5 font-penrise text-4xl leading-tight text-[#f6ede5] sm:text-2xl lg:text-4xl">
-              Building Spaces.
-              <span className="mt-2 block text-[#caa193]">
-                Shaping Living.
-              </span>
-            </h2>
-
-            <p className="mt-6 max-w-md font-play text-sm leading-8 text-gray-400">
-              Thoughtful planning, coordinated construction and
-              attention to the details that make a building feel
-              complete.
-            </p>
-
-            <Link
-              to="/projects"
-              className="mt-8 inline-flex items-center gap-3 border-b border-[#caa193]/60 pb-3 font-conthrax text-[10px] uppercase tracking-[0.16em] text-[#caa193] transition-colors hover:text-white"
-            >
-              Explore Our Projects
-              <ArrowRight size={15} />
-            </Link>
-          </div>
-
-          <div className="space-y-5 font-play text-[13px] leading-[2] text-gray-300 sm:text-sm">
-            <p>
-              Arun Building Constructions delivers residential and
-              commercial spaces through disciplined planning,
-              quality workmanship and coordinated execution. Every
-              project begins with understanding the client's
-              requirements, priorities and vision for the space.
-            </p>
-
-            <p>
-              From initial planning and structural development to
-              finishing and handover, our approach brings the
-              different stages of construction together with a focus
-              on functionality, detail and practical decision-making.
-            </p>
-
-            <p>
-              We understand that a building is more than its
-              structure. It is a home, a workplace or a place where
-              people build their future. That understanding shapes
-              the way we approach every project across Bengaluru.
-            </p>
-
-            <div className="border-l border-[#caa193]/60 py-2 pl-5">
-              <p className="font-penrise text-xl italic leading-relaxed text-[#dfb8a8] sm:text-1xl">
-                "Every space begins with an idea. Thoughtful
-                construction brings it to life."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* LEADERSHIP */}
       <section className="relative overflow-hidden bg-black/20 px-5 py-16 text-white sm:px-8 sm:py-20 lg:px-20 lg:py-24">
@@ -271,7 +204,7 @@ function About() {
                     {leader.role}
                   </p>
 
-                  <h3 className="mt-3 font-penrise text-3xl tracking-wide text-[#f6ede5] sm:text-4xl lg:text-5xl">
+                  <h3 className="mt-3 font-penrise text-1xl tracking-wide text-[#f6ede5] sm:text-2xl lg:text-2.8xl">
                     {leader.name}
                   </h3>
 
@@ -422,7 +355,74 @@ function About() {
           </div>
         </div>
       </section>
+      <section className="relative overflow-hidden bg-transparent px-5 py-13 text-white sm:px-8 sm:py-15 lg:px-20 lg:py-24">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-24 top-10 h-64 w-64 rounded-full bg-[#caa193]/[0.04] blur-3xl"
+        />
 
+        <div className="relative z-[1] mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+          <div>
+            <SectionOrnament className="mb-6" />
+
+            <p className="font-conthrax text-[10px] tracking-[0.25em] text-[#caa193]">
+              WHO WE ARE
+            </p>
+
+            <h2 className="mt-5 font-penrise text-4xl leading-tight text-[#f6ede5] sm:text-2xl lg:text-4xl">
+              Building Spaces.
+              <span className="mt-2 block text-[#caa193]">
+                Shaping Living.
+              </span>
+            </h2>
+
+            <p className="mt-6 max-w-md font-play text-sm leading-8 text-gray-400">
+              Thoughtful planning, coordinated construction and
+              attention to the details that make a building feel
+              complete.
+            </p>
+
+            <Link
+              to="/projects"
+              className="mt-8 inline-flex items-center gap-3 border-b border-[#caa193]/60 pb-3 font-conthrax text-[10px] uppercase tracking-[0.16em] text-[#caa193] transition-colors hover:text-white"
+            >
+              Explore Our Projects
+              <ArrowRight size={15} />
+            </Link>
+          </div>
+
+          <div className="space-y-5 font-play text-[13px] leading-[2] text-gray-300 sm:text-sm">
+            <p>
+              Arun Building Constructions delivers residential and
+              commercial spaces through disciplined planning,
+              quality workmanship and coordinated execution. Every
+              project begins with understanding the client's
+              requirements, priorities and vision for the space.
+            </p>
+
+            <p>
+              From initial planning and structural development to
+              finishing and handover, our approach brings the
+              different stages of construction together with a focus
+              on functionality, detail and practical decision-making.
+            </p>
+
+            <p>
+              We understand that a building is more than its
+              structure. It is a home, a workplace or a place where
+              people build their future. That understanding shapes
+              the way we approach every project across Bengaluru.
+            </p>
+
+            <div className="border-l border-[#caa193]/60 py-2 pl-5">
+              <p className="font-penrise text-xl italic leading-relaxed text-[#dfb8a8] sm:text-1xl">
+                "Every space begins with an idea. Thoughtful
+                construction brings it to life."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* CONSTRUCTION JOURNEY */}
       <section className="relative overflow-hidden px-5 py-16 text-white sm:px-8 sm:py-20 lg:px-20 lg:py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-8 lg:grid-cols-[1fr_auto] lg:gap-16">
